@@ -4025,12 +4025,12 @@ body,
 
 @media (max-width: 760px) {
   .auth-back {
-    margin-left: 5px;
+    margin-left: 8px;
   }
 }
 
 @media (max-width: 500px) {
   .auth-back {
-    margin-left: 5px;
+    margin-left: 8px;
   }
 }
