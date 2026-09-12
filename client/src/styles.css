@@ -3877,17 +3877,6 @@ body,
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 760px) {
   .auth-layout {
     padding: 12px 15px 25px;
@@ -3995,11 +3984,6 @@ body,
   }
 }
 
-
-
-
-
-
 @media (max-width: 760px) {
   .auth-brand {
     width: auto;
@@ -4019,8 +4003,6 @@ body,
     padding-right: 0;
   }
 }
-
-
 
 
 @media (max-width: 760px) {
