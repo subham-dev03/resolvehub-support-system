@@ -3876,3 +3876,121 @@ body,
     padding-right: 28px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+  .auth-layout {
+    padding: 12px 15px 25px;
+  }
+
+  .auth-art {
+    min-height: 0;
+    padding: 28px 24px 24px;
+    margin-bottom: 14px;
+    justify-content: flex-start;
+  }
+
+  .auth-art .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.13em;
+  }
+
+  .auth-art h1 {
+    font-size: 32px;
+    line-height: 1.08;
+    margin: 12px 0;
+  }
+
+  .auth-art p {
+    font-size: 14px;
+    line-height: 1.48;
+    margin: 0;
+  }
+
+  .auth-art-stats {
+    gap: 20px;
+    margin-top: 18px;
+  }
+
+  .auth-art-stats b {
+    font-size: 22px;
+  }
+
+  .auth-art-stats small {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .auth-card {
+    padding: 24px;
+  }
+
+  .auth-card-head {
+    margin-bottom: 22px;
+  }
+
+  .auth-card-head h2 {
+    font-size: 25px;
+  }
+
+  .auth-card-head p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-layout {
+    padding: 10px 12px 22px;
+  }
+
+  .auth-art {
+    padding: 24px 20px 21px;
+    margin-bottom: 12px;
+  }
+
+  .auth-art h1 {
+    font-size: 29px;
+    line-height: 1.08;
+    margin: 10px 0;
+  }
+
+  .auth-art p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .auth-art-stats {
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .auth-art-stats b {
+    font-size: 20px;
+  }
+
+  .auth-art-stats small {
+    font-size: 10px;
+  }
+
+  .auth-card {
+    padding: 22px;
+  }
+
+  .auth-card-head {
+    margin-bottom: 20px;
+  }
+
+  .auth-card-head h2 {
+    font-size: 24px;
+  }
+}
