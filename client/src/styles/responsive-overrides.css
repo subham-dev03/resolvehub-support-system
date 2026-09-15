@@ -1,0 +1,264 @@
+
+@media (max-width: 500px) {
+  .comment,
+  .comment.mine {
+    max-width: 94%;
+  }
+
+  .comment-message {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 761px) {
+  .ticket-details-page {
+    min-height: 0;
+  }
+
+  .detail-grid {
+    height: calc(100vh - 105px);
+    min-height: 720px;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .detail-grid > .panel:first-child {
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .detail-grid > .panel:first-child > .detail-section:first-child {
+    flex: 0 0 auto;
+  }
+
+  .conversation-section {
+    min-height: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .conversation-section > h3 {
+    flex: 0 0 auto;
+  }
+
+  .comments {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 18px;
+    padding: 8px 12px 24px 0;
+    scrollbar-width: thin;
+  }
+
+  .comments::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .comments::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .comments::-webkit-scrollbar-thumb {
+    background: #d0d5dd;
+    border-radius: 10px;
+  }
+
+  .comments::-webkit-scrollbar-thumb:hover {
+    background: #98a2b3;
+  }
+
+  .reply-form {
+    flex: 0 0 auto;
+    margin-top: 14px;
+    padding-top: 4px;
+    background: #fff;
+  }
+
+  .reply-form textarea {
+    min-height: 90px;
+  }
+}
+
+@media (max-width: 760px) {
+  .comments {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+    scrollbar-width: thin;
+  }
+
+  .comments.comments-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .comments::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .comments::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .comments::-webkit-scrollbar-thumb {
+    background: #d0d5dd;
+    border-radius: 10px;
+  }
+}
+
+.comment-message {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.reply-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.attachment-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attachment-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  background: #fff;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.attachment-btn:hover {
+  border-color: #0f4c5c;
+  color: #0f4c5c;
+  transform: translateY(-1px);
+}
+
+.attachment-btn input {
+  display: none;
+}
+
+.selected-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #e4e7ec;
+  border-radius: 9px;
+  background: #f9fafb;
+  color: #344054;
+  font-size: 13px;
+}
+
+.selected-file span {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selected-file button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #667085;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.selected-file button:hover {
+  color: #d92d20;
+}
+
+.selected-image {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.comment-attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.chat-image-link {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.chat-image {
+  display: block;
+  width: auto;
+  max-width: min(360px, 100%);
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #e4e7ec;
+  cursor: pointer;
+}
+
+.chat-file {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: min(360px, 100%);
+  padding: 11px 13px;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  background: #f9fafb;
+  color: #344054;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chat-file span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chat-file:hover {
+  border-color: #0f4c5c;
+  color: #0f4c5c;
+}
+
