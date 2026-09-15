@@ -300,3 +300,36 @@
     padding-right: 28px;
   }
 }
+
+
+
+
+
+@media (max-width: 760px) {
+  .auth-layout {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .auth-art {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 28px 24px 24px !important;
+    justify-content: flex-start !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-layout {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .auth-art {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 24px 20px 21px !important;
+  }
+}
